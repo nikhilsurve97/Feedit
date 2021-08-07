@@ -1,0 +1,230 @@
+/*css reset*/
+*{
+    margin:0px;
+    padding: 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*css variable*/
+:root{
+    --navbar-height: 59px;
+
+}
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/*Navigation Bar: logo and Image*/
+#logo{
+    margin:10px 34px;
+    
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+/*Navigation Bar: list styling*/
+#navbar ul{
+    
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+    
+}
+
+#navbar ul li a{
+    border-radius: 20px;
+    text-decoration: none;
+    padding:3px 22px;
+    display: block;
+    color: blanchedalmond;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*Home*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(Images/rook.jpg) no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: rgb(129, 115, 115);
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4d74, 0 0 40px #ff4d6b, 0 0 50px #ff4d5c, 0 0 60px #ff4d6b, 0 0 70px #ff4d65, 0 0 80px #ff4d7a;
+    text-align: center;
+    opacity: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+#home p{
+    color:rgb(216, 111, 111);
+    border-radius: 15px;
+    background-color: rgb(216, 205, 205);
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 1;
+}
+
+/*services*/
+#services{
+    
+    margin:34px;
+    display: flex;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box{
+    border-radius: 15px;
+    margin: 7px;
+    padding: 7px;
+    background-color: tomato;
+}
+
+#services .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/*client section*/
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(Images/social\ icons.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    height: 1244px;
+}
+
+/*contact*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(Images/brooke.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 20%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/*utility*/
+.h-primary{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
